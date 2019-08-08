@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1044207822FBCEEB00C7CE78 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044207722FBCEEB00C7CE78 /* TestViewController.swift */; };
+		1097352722FAAC8200024948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097352622FAAC8200024948 /* AppDelegate.swift */; };
+		1097352922FAAC8200024948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097352822FAAC8200024948 /* ViewController.swift */; };
+		1097352C22FAAC8200024948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1097352A22FAAC8200024948 /* Main.storyboard */; };
+		1097352E22FAAC8300024948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1097352D22FAAC8300024948 /* Assets.xcassets */; };
+		1097353122FAAC8300024948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1097352F22FAAC8300024948 /* LaunchScreen.storyboard */; };
+		1097353C22FAAC8300024948 /* ZSTabControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097353B22FAAC8300024948 /* ZSTabControllerTests.swift */; };
+		1097354722FAAC8300024948 /* ZSTabControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097354622FAAC8300024948 /* ZSTabControllerUITests.swift */; };
+		1097355922FAAD3A00024948 /* ZSTabHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097355822FAAD3A00024948 /* ZSTabHeaderView.swift */; };
+		1097355B22FAAD5100024948 /* ZSTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097355A22FAAD5100024948 /* ZSTabViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1097353822FAAC8300024948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1097351B22FAAC8200024948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1097352222FAAC8200024948;
+			remoteInfo = ZSTabController;
+		};
+		1097354322FAAC8300024948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1097351B22FAAC8200024948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1097352222FAAC8200024948;
+			remoteInfo = ZSTabController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1044207722FBCEEB00C7CE78 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		1097352322FAAC8200024948 /* ZSTabController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTabController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1097352622FAAC8200024948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1097352822FAAC8200024948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1097352B22FAAC8200024948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1097352D22FAAC8300024948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1097353022FAAC8300024948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1097353222FAAC8300024948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1097353722FAAC8300024948 /* ZSTabControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSTabControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1097353B22FAAC8300024948 /* ZSTabControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSTabControllerTests.swift; sourceTree = "<group>"; };
+		1097353D22FAAC8300024948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1097354222FAAC8300024948 /* ZSTabControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSTabControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1097354622FAAC8300024948 /* ZSTabControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSTabControllerUITests.swift; sourceTree = "<group>"; };
+		1097354822FAAC8300024948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1097355822FAAD3A00024948 /* ZSTabHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSTabHeaderView.swift; sourceTree = "<group>"; };
+		1097355A22FAAD5100024948 /* ZSTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSTabViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1097352022FAAC8200024948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1097353422FAAC8300024948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1097353F22FAAC8300024948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1097351A22FAAC8200024948 = {
+			isa = PBXGroup;
+			children = (
+				1097352522FAAC8200024948 /* ZSTabController */,
+				1097353A22FAAC8300024948 /* ZSTabControllerTests */,
+				1097354522FAAC8300024948 /* ZSTabControllerUITests */,
+				1097352422FAAC8200024948 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1097352422FAAC8200024948 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1097352322FAAC8200024948 /* ZSTabController.app */,
+				1097353722FAAC8300024948 /* ZSTabControllerTests.xctest */,
+				1097354222FAAC8300024948 /* ZSTabControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1097352522FAAC8200024948 /* ZSTabController */ = {
+			isa = PBXGroup;
+			children = (
+				1097352622FAAC8200024948 /* AppDelegate.swift */,
+				1097352822FAAC8200024948 /* ViewController.swift */,
+				1044207722FBCEEB00C7CE78 /* TestViewController.swift */,
+				1097355722FAACF200024948 /* TabController */,
+				1097352A22FAAC8200024948 /* Main.storyboard */,
+				1097352D22FAAC8300024948 /* Assets.xcassets */,
+				1097352F22FAAC8300024948 /* LaunchScreen.storyboard */,
+				1097353222FAAC8300024948 /* Info.plist */,
+			);
+			path = ZSTabController;
+			sourceTree = "<group>";
+		};
+		1097353A22FAAC8300024948 /* ZSTabControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1097353B22FAAC8300024948 /* ZSTabControllerTests.swift */,
+				1097353D22FAAC8300024948 /* Info.plist */,
+			);
+			path = ZSTabControllerTests;
+			sourceTree = "<group>";
+		};
+		1097354522FAAC8300024948 /* ZSTabControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1097354622FAAC8300024948 /* ZSTabControllerUITests.swift */,
+				1097354822FAAC8300024948 /* Info.plist */,
+			);
+			path = ZSTabControllerUITests;
+			sourceTree = "<group>";
+		};
+		1097355722FAACF200024948 /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				1097355822FAAD3A00024948 /* ZSTabHeaderView.swift */,
+				1097355A22FAAD5100024948 /* ZSTabViewController.swift */,
+			);
+			path = TabController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1097352222FAAC8200024948 /* ZSTabController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1097354B22FAAC8300024948 /* Build configuration list for PBXNativeTarget "ZSTabController" */;
+			buildPhases = (
+				1097351F22FAAC8200024948 /* Sources */,
+				1097352022FAAC8200024948 /* Frameworks */,
+				1097352122FAAC8200024948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZSTabController;
+			productName = ZSTabController;
+			productReference = 1097352322FAAC8200024948 /* ZSTabController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1097353622FAAC8300024948 /* ZSTabControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1097354E22FAAC8300024948 /* Build configuration list for PBXNativeTarget "ZSTabControllerTests" */;
+			buildPhases = (
+				1097353322FAAC8300024948 /* Sources */,
+				1097353422FAAC8300024948 /* Frameworks */,
+				1097353522FAAC8300024948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1097353922FAAC8300024948 /* PBXTargetDependency */,
+			);
+			name = ZSTabControllerTests;
+			productName = ZSTabControllerTests;
+			productReference = 1097353722FAAC8300024948 /* ZSTabControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1097354122FAAC8300024948 /* ZSTabControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1097355122FAAC8300024948 /* Build configuration list for PBXNativeTarget "ZSTabControllerUITests" */;
+			buildPhases = (
+				1097353E22FAAC8300024948 /* Sources */,
+				1097353F22FAAC8300024948 /* Frameworks */,
+				1097354022FAAC8300024948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1097354422FAAC8300024948 /* PBXTargetDependency */,
+			);
+			name = ZSTabControllerUITests;
+			productName = ZSTabControllerUITests;
+			productReference = 1097354222FAAC8300024948 /* ZSTabControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1097351B22FAAC8200024948 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = guitarJason;
+				TargetAttributes = {
+					1097352222FAAC8200024948 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1097353622FAAC8300024948 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1097352222FAAC8200024948;
+					};
+					1097354122FAAC8300024948 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1097352222FAAC8200024948;
+					};
+				};
+			};
+			buildConfigurationList = 1097351E22FAAC8200024948 /* Build configuration list for PBXProject "ZSTabController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1097351A22FAAC8200024948;
+			productRefGroup = 1097352422FAAC8200024948 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1097352222FAAC8200024948 /* ZSTabController */,
+				1097353622FAAC8300024948 /* ZSTabControllerTests */,
+				1097354122FAAC8300024948 /* ZSTabControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1097352122FAAC8200024948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1097353122FAAC8300024948 /* LaunchScreen.storyboard in Resources */,
+				1097352E22FAAC8300024948 /* Assets.xcassets in Resources */,
+				1097352C22FAAC8200024948 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1097353522FAAC8300024948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1097354022FAAC8300024948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1097351F22FAAC8200024948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1044207822FBCEEB00C7CE78 /* TestViewController.swift in Sources */,
+				1097352922FAAC8200024948 /* ViewController.swift in Sources */,
+				1097352722FAAC8200024948 /* AppDelegate.swift in Sources */,
+				1097355922FAAD3A00024948 /* ZSTabHeaderView.swift in Sources */,
+				1097355B22FAAD5100024948 /* ZSTabViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1097353322FAAC8300024948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1097353C22FAAC8300024948 /* ZSTabControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1097353E22FAAC8300024948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1097354722FAAC8300024948 /* ZSTabControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1097353922FAAC8300024948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1097352222FAAC8200024948 /* ZSTabController */;
+			targetProxy = 1097353822FAAC8300024948 /* PBXContainerItemProxy */;
+		};
+		1097354422FAAC8300024948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1097352222FAAC8200024948 /* ZSTabController */;
+			targetProxy = 1097354322FAAC8300024948 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1097352A22FAAC8200024948 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1097352B22FAAC8200024948 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1097352F22FAAC8300024948 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1097353022FAAC8300024948 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1097354922FAAC8300024948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1097354A22FAAC8300024948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1097354C22FAAC8300024948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TTC3QD7TR;
+				INFOPLIST_FILE = ZSTabController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.ZSTabController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1097354D22FAAC8300024948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TTC3QD7TR;
+				INFOPLIST_FILE = ZSTabController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.ZSTabController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1097354F22FAAC8300024948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZSTabControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.ZSTabControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZSTabController.app/ZSTabController";
+			};
+			name = Debug;
+		};
+		1097355022FAAC8300024948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZSTabControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.ZSTabControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZSTabController.app/ZSTabController";
+			};
+			name = Release;
+		};
+		1097355222FAAC8300024948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZSTabControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.ZSTabControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZSTabController;
+			};
+			name = Debug;
+		};
+		1097355322FAAC8300024948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZSTabControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.ZSTabControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZSTabController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1097351E22FAAC8200024948 /* Build configuration list for PBXProject "ZSTabController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1097354922FAAC8300024948 /* Debug */,
+				1097354A22FAAC8300024948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1097354B22FAAC8300024948 /* Build configuration list for PBXNativeTarget "ZSTabController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1097354C22FAAC8300024948 /* Debug */,
+				1097354D22FAAC8300024948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1097354E22FAAC8300024948 /* Build configuration list for PBXNativeTarget "ZSTabControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1097354F22FAAC8300024948 /* Debug */,
+				1097355022FAAC8300024948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1097355122FAAC8300024948 /* Build configuration list for PBXNativeTarget "ZSTabControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1097355222FAAC8300024948 /* Debug */,
+				1097355322FAAC8300024948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1097351B22FAAC8200024948 /* Project object */;
+}
