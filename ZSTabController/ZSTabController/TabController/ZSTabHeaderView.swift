@@ -80,10 +80,47 @@ class ZSTabHeaderView: UIView {
     var fixedTabWidth: CGFloat?
     private var tabWidth: CGFloat = 0
     
-    var normalTextFont: UIFont = UIFont.systemFont(ofSize: 14)
-    var selectedTextFont: UIFont = UIFont.systemFont(ofSize: 14)
-    var normalTextColor: UIColor = UIColor.darkText
-    var selectedTextColor: UIColor = defaulSelectedColor // 默认同指示器颜色
+    var normalTextFont: UIFont = UIFont.systemFont(ofSize: 14) {
+        didSet {
+            for index in 0..<tabViews.count {
+                if index != selectedIndex {
+                    let tabView = tabViews[index]
+                    tabView.font = normalTextFont
+                }
+            }
+        }
+    }
+    var selectedTextFont: UIFont = UIFont.systemFont(ofSize: 14) {
+        didSet {
+            for index in 0..<tabViews.count {
+                if index == selectedIndex {
+                    let tabView = tabViews[index]
+                    tabView.font = selectedTextFont
+                }
+            }
+        }
+    }
+    var normalTextColor: UIColor = UIColor.darkText {
+        didSet {
+            for index in 0..<tabViews.count {
+                if index != selectedIndex {
+                    let tabView = tabViews[index]
+                    tabView.textColor = normalTextColor
+                }
+            }
+        }
+    }
+    // 默认同指示器颜色
+    var selectedTextColor: UIColor = defaulSelectedColor {
+        didSet {
+            for index in 0..<tabViews.count {
+                if index == selectedIndex {
+                    let tabView = tabViews[index]
+                    tabView.textColor = selectedTextColor
+                }
+            }
+        }
+    }
     
     // YES时会调整tab位置，使它总是在视图中间；NO时指示调整使得tab不被遮挡
     var indicatorAlwaysInCenter: Bool = true

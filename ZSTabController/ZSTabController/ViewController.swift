@@ -32,9 +32,11 @@ class ViewController: UIViewController {
         tabVC.tabContents = [testVC1, testVC2, testVC3, testVC4, testVC5, testVC6, testVC7, testVC8, testVC9]
 
         tabVC.tabHeight = 44
-        tabVC.tabHeader.selectedTextColor = UIColor.blue
-        tabVC.tabHeader.normalTextColor = UIColor.black
-        tabVC.tabHeader.normalTextFont = UIFont.systemFont(ofSize: 14)
+        tabVC.tabHeader.normalTextColor = UIColor.gray
+        tabVC.tabHeader.selectedTextColor = UIColor.red
+        tabVC.tabHeader.indicatorColor = UIColor.red
+        tabVC.tabHeader.normalTextFont = UIFont.systemFont(ofSize: 16)
+        tabVC.tabHeader.selectedTextFont = UIFont.systemFont(ofSize: 16)
         
         tabVC.delegate = self
 //        tabVC.disableContentScroll = true
