@@ -25,6 +25,7 @@ class ZSTabViewController: UIViewController {
         _contentScrollView.isPagingEnabled = true
         _contentScrollView.isScrollEnabled = !disableContentScroll
         _contentScrollView.delegate = self
+        _contentScrollView.bounces = false
         _contentScrollView.showsVerticalScrollIndicator = false
         _contentScrollView.showsHorizontalScrollIndicator = false
         return _contentScrollView
@@ -107,8 +108,8 @@ class ZSTabViewController: UIViewController {
         for subView in contentScrollView.subviews {
             subView.removeFromSuperview()
         }
-        for childVC in self.children {
-            childVC.removeFromParent()
+        for childVC in self.childViewControllers {
+            childVC.removeFromParentViewController()
         }
         
         // 添加子控件
@@ -119,7 +120,7 @@ class ZSTabViewController: UIViewController {
                 contentView = contentV
             } else if let contentVC = content as? UIViewController {
                 contentView = contentVC.view
-                self.addChild(contentVC)
+                self.addChildViewController(contentVC)
             } else {
                 assert(false, "tabContents的内容非UIViewController，也非UIView")
             }
@@ -134,7 +135,18 @@ class ZSTabViewController: UIViewController {
     func changeTitle(_ title: String, ofIndex index: Int) {
         tabHeader.changeTitle(title, index: index)
     }
-
+    
+    /** 修改全部tab标题 */
+    func changeAllTitle(newTabTitles: [String]) {
+        if tabTitles.count != newTabTitles.count {
+            return
+        }
+        for index in 0..<newTabTitles.count {
+            let title = newTabTitles[index]
+            changeTitle(title, ofIndex: index)
+        }
+    }
+    
     /** 修改索引 */
     func changeSeletedIndex(_ index: Int, animate: Bool) {
         if index > tabContents.count || index == selectedIndex{
@@ -160,6 +172,7 @@ extension ZSTabViewController: UIScrollViewDelegate {
 extension ZSTabViewController: ZSTabHeaderViewDelegate {
     func selectedTabAtIndex(_ headerView: ZSTabHeaderView, index: Int) {
         if index > tabContents.count || selectedIndex == index{
+            delegate?.selectedTabAtIndex(self, index: selectedIndex)
             return
         }
         

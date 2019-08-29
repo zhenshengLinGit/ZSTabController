@@ -167,7 +167,7 @@ class ZSTabHeaderView: UIView {
             tabView.frame = CGRect.init(x: CGFloat(index) * tabWidth, y: 0, width: tabWidth, height: tabHeight)
         }
         
-        indicator.superview?.bringSubviewToFront(indicator)
+        indicator.superview?.bringSubview(toFront: indicator)
     }
     
     func setupDetail() {

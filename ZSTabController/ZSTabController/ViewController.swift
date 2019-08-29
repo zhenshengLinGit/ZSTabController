@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         let tabVC = ZSTabViewController()
         tabVC.view.frame = CGRect.init(x: 0, y: 100, width: self.view.bounds.width, height:self.view.bounds.height - 100)
         self.view.addSubview(tabVC.view)
-        self.addChild(tabVC)
+        self.addChildViewController(tabVC)
         
         tabVC.tabTitles = ["全部","联系人","群组","文件","聊天记录","我组织的","我组织的","我组织的","我组织的"];
         //    _tabVC.tabTitles = @[@"首页",@"日历",@"我组织的"];
